@@ -1,0 +1,40 @@
+# header information:
+HInverter|9.07
+
+# Views:
+Vlayout|lay
+
+# Cell inv;1{lay}
+Cinv;1{lay}||mocmos|1455220408914|1548698635382||DRC_last_good_drc_area_date()G1548698654284|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1548698654284
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-P-Active-Con|contact@0||-6|13||5||
+NMetal-1-P-Active-Con|contact@1||6|13||5||
+NMetal-1-N-Active-Con|contact@2||-6|-14||5||
+NMetal-1-N-Active-Con|contact@3||6|-14||5||
+NMetal-1-Polysilicon-1-Con|contact@4||-25|0||||
+NN-Transistor|nmos@0||0|-14|7||RRR|
+NPolysilicon-1-Pin|pin@0||0|0||||
+NPolysilicon-1-Pin|pin@1||-20|0||||
+NMetal-1-Pin|pin@2||6|0||||
+NMetal-1-Pin|pin@3||20|0||||
+NP-Transistor|pmos@0||0|13|7||RRR|
+NMetal-1-P-Well-Con|substr@0||0|-30|20|||
+NMetal-1-N-Well-Con|well@0||0|29|20|1||
+AP-Active|net@1|||S0|pmos@0|diff-bottom|-3.75|13|contact@0||-6|13
+AP-Active|net@2|||S1800|pmos@0|diff-top|3.75|13|contact@1||6|13
+AN-Active|net@3|||S1800|nmos@0|diff-top|3.75|-14|contact@3||6|-14
+AN-Active|net@4|||S1800|contact@2||-6|-14|nmos@0|diff-bottom|-3.75|-14
+AMetal-1|net@5||1|S2700|contact@0||-6|13|well@0||-6|29
+AMetal-1|net@6||1|S900|contact@2||-6|-14|substr@0||-6|-30
+APolysilicon-1|net@8|||S900|pmos@0|poly-right|0|6|pin@0||0|0
+APolysilicon-1|net@9|||S900|pin@0||0|0|nmos@0|poly-left|0|-7
+APolysilicon-1|net@10|||S0|pin@0||0|0|pin@1||-20|0
+AMetal-1|net@11||1|S900|contact@1||6|13|pin@2||6|0
+AMetal-1|net@12||1|S900|pin@2||6|0|contact@3||6|-14
+AMetal-1|net@13||1|S1800|pin@2||6|0|pin@3||20|0
+APolysilicon-1|net@14|||S1800|contact@4||-25|0|pin@1||-20|0
+EA||D5G2;|contact@4||U
+EGnd||D5G2;|substr@0||U
+EVdd||D5G2;|well@0||U
+EY||D5G2;|pin@3||U
+X
